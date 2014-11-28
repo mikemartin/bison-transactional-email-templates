@@ -3,7 +3,7 @@
 <head>
 <meta name="viewport" content="width=device-width" />
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<title>Alerts e.g. approaching your limit</title>
+<title>Alerts e.g. order received</title>
 <link href="styles.css" media="all" rel="stylesheet" type="text/css" />
 </head>
 
@@ -16,8 +16,8 @@
 			<div class="content">
 				<table class="main" width="100%" cellpadding="0" cellspacing="0">
 					<tr>
-						<td class="alert alert-warning">
-							Warning: You're approaching your limit. Please upgrade.
+						<td class="alert alert-good">
+							You have received an order!
 						</td>
 					</tr>
 					<tr>
@@ -25,17 +25,17 @@
 							<table width="100%" cellpadding="0" cellspacing="0">
 								<tr>
 									<td class="content-block">
-										You have <strong>1 free report</strong> remaining.
+										You have received an order from <strong>{{ first_name }} {{ last_name }}</strong> on {{ order_date format="M j Y" }} for <strong>${{ total }}</strong>.
 									</td>
 								</tr>
 								<tr>
 									<td class="content-block">
-										Add your credit card now to upgrade your account to a premium plan to ensure you don't miss out on any reports.
+										You can view the full details of your order by clicking the link below.
 									</td>
 								</tr>
 								<tr>
 									<td class="content-block">
-										<a href="http://www.mailgun.com" class="btn-primary">Upgrade my account</a>
+										<a href="http://www.statamic.com" class="btn-primary">View My Order</a>
 									</td>
 								</tr>
 								<tr>
@@ -50,7 +50,7 @@
 				<div class="footer">
 					<table width="100%">
 						<tr>
-							<td class="aligncenter content-block"><a href="http://www.mailgun.com">Unsubscribe</a> from these alerts.</td>
+							<td class="aligncenter content-block"><a href="http://www.statamic.com">Unsubscribe</a> from these alerts.</td>
 						</tr>
 					</table>
 				</div></div>
